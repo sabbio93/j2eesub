@@ -25,12 +25,35 @@
       <version>LATEST</version>
     </dependency>
     
+    <dependency>
+    	<groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>LATEST</version>
+    </dependency>
+    
      <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-search</artifactId>
       <version>LATEST</version>
     </dependency>
     
+    <!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+	<dependency>
+	    <groupId>javax.ws.rs</groupId>
+	    <artifactId>javax.ws.rs-api</artifactId>
+	    <version>2.0</version>
+	</dependency>
+
+
+	<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <version>1.4.196</version>
+    <scope>compile</scope>
+</dependency>
+
+	
   </dependencies>
 
 	<build>
@@ -40,6 +63,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<inherited>true</inherited>
 				<configuration>
+					 <generateClient>true</generateClient>
 					<source>1.6</source>
 					<target>1.6</target>
 				</configuration>

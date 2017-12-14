@@ -3,4 +3,5 @@
   <installed facet="java" version="9"/>
   <installed facet="jpt.jpa" version="2.1"/>
   <installed facet="jst.ejb" version="3.1"/>
+  <installed facet="jst.jaxrs" version="1.1"/>
 </faceted-project>
